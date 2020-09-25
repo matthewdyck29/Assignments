@@ -36,6 +36,11 @@ public class FizzBuzz {
 	}
 	
 	public static void checkNumbers(int start, int end) {
+		if(start > end) {
+			System.out.println("Invalid range.");
+			return;
+		}
+		
 		for(int i = start;i <= end;i++) {
 			if(i % 15 == 0) {
 				if(i == 0) {
